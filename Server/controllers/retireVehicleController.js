@@ -1,0 +1,18 @@
+const sql = require('mssql')
+const sqlConfig=require('../sqlConfig.js');
+
+exports.retireVehicle=function(req,res){
+    //console.log(req.body.username + req.body.password);
+    sql.connect(sqlConfig).then(pool => {
+        vehicleID = req.body.vehicleID;
+        
+        return pool.request()
+            .input('pID', sql.Int, vehicleID)
+            .output('responseMessage', sql.VarChar(250))
+            .execute('uspRetireVehicle');
+    }).then(result => {
+        console.log(result);
+    }).catch(err => {
+        console.log(err);
+    })
+}

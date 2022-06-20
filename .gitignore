@@ -1,0 +1,7 @@
+/Server/node_modules
+/Server/sqlConfig.js
+/Server/.env
+
+/Client/node_modules
+/Client/dist
+/Client/.parcel-cache

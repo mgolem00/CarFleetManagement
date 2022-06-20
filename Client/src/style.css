@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+table {
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+td {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+th {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: dodgerblue;
+    color: white;
+  }
+  
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.loginBox {
+    border: 1px solid lightgray;
+    border-radius: 5px;  
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color:dodgerblue;
+}
+
+.loginBox input {
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+.loginBox button {
+    margin: 5px;
+    color: white;
+    text-align: center;
+    background-color:darkturquoise;
+    padding: 14px 20px;
+    cursor: pointer;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+}
+
+.loginBox i {
+    color: black;
+    vertical-align: middle;
+}
+
+.CRUD {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+  
+.CRUDBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.aBody {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 10px;
+}
